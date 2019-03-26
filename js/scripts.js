@@ -3,6 +3,61 @@
 
 	// Page Loaded...
 	$(document).ready(function () {
+		// console.log($('#themain'))
+		// $('#themain').css("visibility",  'visible')
+
+		// var tes= document.querySelector('#themain')
+		// $('.introText').hover(function(){
+		// 	console.log(this)
+		// 	$('#themain').fadeIn(300)
+
+		// })
+
+		// var owl = $('.cast-slider');
+
+		// owl.owlCarousel({
+		// 	loop: true,
+		// 	navText: ['<i class="pe-7s-angle-left"></i>','<i class="pe-7s-angle-right"></i>'],
+		// 	items : 5, //10 items above 1000px browser width
+		// 	itemsDesktop : [1000,5], //5 items between 1000px and 901px
+		// 	itemsDesktopSmall : [900,3], // betweem 900px and 601px
+		// 	itemsTablet: [600,2], //2 items between 600 and 0
+		// 	itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+		// });
+
+		// $('JasonPrevBtn').click(function(){
+		// 	owl.trigger('next.owl.carousel');
+		// })
+		// $('JasonNextBtn')
+
+
+	   
+		
+	
+
+		$(function(){
+			var hasBeenTriggered = false;
+			$(window).scroll(function() {
+				if ($(this).scrollTop() >= 400 && !hasBeenTriggered) { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
+				//  alert("You've scrolled ^^^ pixels.");
+					$('.initialIntroTextState').addClass('introText animated fadeIn')
+					hasBeenTriggered = true;
+				}
+			});
+		});
+
+		// $(function() {
+		// 	$('.introTxtContainer').hover(function(){
+		// 		$('.initialIntroTextState').addClass('introT ext animated fadeIn')
+		// 	})
+		// })
+
+		// $('.introText').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd osanimationend animationend',
+		// function(){
+		// 	$(this).removeClass('animated fadeIn')
+		// })
+
+
 
 		// Nice Scroll
 		$(".scroll").niceScroll({
@@ -130,10 +185,19 @@
 				0: {
 					items: 1
 				},
+				550:{
+					items: 2
+				},
 				640: {
 					items: 3
 				},
 				769: {
+					items: 4
+				},
+				980: {
+					items: 5
+				},
+				1020: {
 					items: 6
 				}
 			}
