@@ -3,58 +3,12 @@
 
 	// Page Loaded...
 	$(document).ready(function () {
-		// console.log($('#themain'))
-		// $('#themain').css("visibility",  'visible')
-
-		// var tes= document.querySelector('#themain')
-		// $('.introText').hover(function(){
-		// 	console.log(this)
-		// 	$('#themain').fadeIn(300)
-
-		// })
-
-		// var owl = $('.cast-slider');
-
-		// owl.owlCarousel({
-		// 	loop: true,
-		// 	navText: ['<i class="pe-7s-angle-left"></i>','<i class="pe-7s-angle-right"></i>'],
-		// 	items : 5, //10 items above 1000px browser width
-		// 	itemsDesktop : [1000,5], //5 items between 1000px and 901px
-		// 	itemsDesktopSmall : [900,3], // betweem 900px and 601px
-		// 	itemsTablet: [600,2], //2 items between 600 and 0
-		// 	itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-		// });
-
-		// $('JasonPrevBtn').click(function(){
-		// 	owl.trigger('next.owl.carousel');
-		// })
-		// $('JasonNextBtn')
-
-
-
-				
-		
-			// var domHandler = document.querySelector('.animationUfo')
-			// console.dir(domHandler)
-
-			
-		
-			
-			// var test = function(){
-			// 	var text = document.querySelector('.introTxtContainer')
-			// 	console.log("text". text)
-			// 	return text.addEventListener("click", function(){
-			// 		document.querySelector(".introTxtTitle").style.Color = 'green'
-			// 	})
-			
-			// }
-
-			// window.onload = test
-
-
 		setTimeout(function(){
-			document.querySelector('.animationUfo').style.height = "40px";
-			document.querySelector('.animationUfo').style.visibility = "hidden";
+			var ufoAnimation = document.querySelector('.animationUfo')
+			if(ufoAnimation){
+				ufoAnimation.style.height = "40px";
+				ufoAnimation.style.visibility = "hidden";
+			}
 		}, 3700)
 		
 	
