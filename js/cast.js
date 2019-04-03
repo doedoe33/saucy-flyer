@@ -20,7 +20,6 @@ $(window).on('load', function(){
             450:{
                 items: 2
             },
-            
             750: {
                 items: 3
             },
