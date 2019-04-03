@@ -2795,6 +2795,7 @@ textarea {
 	.tileGrid{
 		grid-area: tileGrid;
 		background-image: url('../images/destroyedCity.jpg');
+		background-repeat: no-repeat;
 		background-attachment: fixed;
 		height: 700px;
 		display: grid;
