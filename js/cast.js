@@ -51,7 +51,6 @@ $(window).on('load', function(){
     var boxes = $('.animated').toArray()
 
     function addSlider(item, box){
-        box.style.visibility = "hidden";
         item.addEventListener('mouseover',function(){
             box.style.visibility = "visible"
             box.classList.add("bounceInUp");

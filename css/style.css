@@ -2594,9 +2594,9 @@ textarea {
 	
 	.firstImagePlanet{
 		grid-area: firstImgPlnt;
-		background-image: url('../images/saucyflyer_terrain_sky_resized.jpg');
-		background-attachment: fixed;
-		background-repeat: no-repeat;
+		background-image: url('../images/saucyflyer-bg.png');
+		/* background-attachment: fixed; */
+		/* background-repeat: no-repeat; */
 		background-size:cover;
 		height: 830px;
 		text-align: center;
