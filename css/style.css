@@ -4,7 +4,7 @@
 *
 * 01. General Styles
 * 02. Page
-* 03. Cast
+* 03. Cast List (Home Page)
 * 04. Awards
 * 05. Quote
 * 06. Pace
@@ -726,6 +726,9 @@ textarea {
 	}
 }
 @media all and (max-width: 420px)  {
+	.castList{
+		padding:0;
+	}
 	.cast {
 		display: block;
 		margin-left: 0;
@@ -3239,8 +3242,8 @@ textarea {
 		height: 50px;
 	}
 	.castList{
-		padding-top: 20px;
-		padding-left: 130px;
+		/* padding-top: 20px;
+		padding-left: 130px; */
 	}
 	.castList>div{
 		padding: 10px;
