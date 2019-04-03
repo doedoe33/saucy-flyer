@@ -155,57 +155,7 @@
 		});
 
 		/*==========  Cast Slider  ==========*/
-		$('.cast-slider').owlCarousel({
-			loop:true,
-			nav:true,
-			dots: false,
-			navText: ['<i class="pe-7s-angle-left"></i>','<i class="pe-7s-angle-right"></i>'],
-			touchDrag: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				441:{
-					items: 2
-				},
-				620: {
-					items: 3
-				},
-				769: {
-					items: 4
-				},
-				980: {
-					items: 5
-				},
-				1020: {
-					items: 6
-				}
-			}
-		});
-		$('.cast-slider .owl-prev').on({
-			mouseenter: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-				$('.cast-slider .owl-item.active:first').addClass('hover-effect');
-			},
-			mouseleave: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-			},
-			click: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-			}
-		});
-		$('.cast-slider .owl-next').on({
-			mouseenter: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-				$('.cast-slider .owl-item.active:last').addClass('hover-effect');
-			},
-			mouseleave: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-			},
-			click: function() {
-				$('.cast-slider .owl-item').removeClass('hover-effect');
-			}
-		});
+		// moved to its own file - cast.js
 
 		/*==========  Featured Slider  ==========*/
 		$('.featured-slider').owlCarousel({
@@ -384,27 +334,6 @@
 				$('body').addClass('no-scroll');
 			}
 		}
-
-		// Cast Expand
-		var original_height = $('.cast-slider .hover').outerHeight();
-		$('.cast-slider .hover .expand').on('click', function(event) {
-			event.preventDefault();
-			var height = $(this).parents('.item').height() - 44;
-			
-			if ($(this).parents('.hover').hasClass('open-content')) {
-				$(this).parents('.hover').animate({height: original_height}, 200);
-				$('.owl-carousel .owl-stage-outer').css('z-index', 'auto');
-			} else {
-				$(this).parents('.hover').animate({height: height}, 200);
-				$('.owl-carousel .owl-stage-outer').css('z-index', '2');
-			}
-			if ($(this).children('i').hasClass('pe-7s-plus')) {
-				$(this).children('i').removeClass('pe-7s-plus').addClass('pe-7s-less');
-			} else if ($(this).children('i').hasClass('pe-7s-less')) {
-				$(this).children('i').removeClass('pe-7s-less').addClass('pe-7s-plus');
-			}
-			$(this).parents('.hover').toggleClass('open-content');
-		});
 
 		// Share
 		$('.share-open').on('click', function(event) {
