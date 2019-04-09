@@ -9,14 +9,14 @@
 				ufoAnimation.style.height = "40px";
 				ufoAnimation.style.visibility = "hidden";
 			}
-		}, 3700)
+		}, 2700)
 		
 	
 
 		$(function(){
 			var hasBeenTriggered = false;
 			$(window).scroll(function() {
-				if ($(this).scrollTop() >= 400 && !hasBeenTriggered) { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
+				if ($(this).scrollTop() >= 230 && !hasBeenTriggered) { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
 				//  alert("You've scrolled ^^^ pixels.");
 					$('.initialIntroTextState').addClass('introText animated fadeIn')
 					hasBeenTriggered = true;

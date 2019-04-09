@@ -105,6 +105,11 @@
 /* Typography
    ========================================================================== */
 @import url('../fonts/fonts/stylesheet.css');
+/* @import url('../fonts/MonsterificBB-2.otf'); */
+@font-face {
+	font-family: Monsterific;
+	src: url("../fonts/MonsterificBB-2.otf") format("opentype");
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
@@ -2598,21 +2603,17 @@ textarea {
 		/* background-attachment: fixed; */
 		/* background-repeat: no-repeat; */
 		background-size:cover;
-		height: 830px;
+		height: 720px;
 		text-align: center;
 	}
 	#saucy{
-		font-size: 120px;
-		animation-duration: 3s;
-		color: red;
-		text-shadow: 2px 2px white;
-		font-size: 120px;
-		font-family: 'Anton', sans-serif;
-		animation-delay: 4s;
-		display: inline-block;
-		padding-right: 10px;
+		height: 400px;
+		width: 55%;
+		animation-duration: 2s;
+		margin-left: 200px;
+		animation-delay: 3s;
 	}
-	#flyer{
+	/* #flyer{
 		font-size: 120px;
 		animation-duration: 3s;
 		color: red;
@@ -2641,17 +2642,17 @@ textarea {
 		animation-delay: 7s;
 		animation-duration: 3s;
 		display: inline-block;
-	}
+	} */
 	
 	.animationUfo{
 		width: 250px;
 		position: relative;
 		margin-top: 30px;
 		height: 250px;
-		background: url('../images/spaceship.png') left center;
+		background: url('../images/SAUCER.png') left center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		animation: play 3s;
+		animation: play 2s;
 		animation-delay: 2s;
 	
 	}
@@ -2705,6 +2706,15 @@ textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 400px;
+		text-align: center;
+	}
+	.parody-catch{
+		font-family: 'Monsterific';
+		color: white;
+		margin: 110px auto 0 auto;
+		width: 50%;
+		font-size: 70px;
+		line-height: 1em;
 	}
 	
 	.slideInText{
@@ -2848,24 +2858,22 @@ textarea {
 			background-image: url('../images/saucyflyer_terrain_sky_mobile.png')
 		}
 		#saucy{
-			font-size: 40px;
-			padding-right: 0%;
+			margin-left: 30px;
+			position: absolute;
+			top: 10px;
+			left: 60px;
+			height: 200px;
+			width: 75%;
 		}
-		#flyer{
-			font-size: 40px;
-			padding-right: 10px;
-			padding-bottom: 20px
+		.parody-catch{
+			font-family: 'Monsterific';
+			color: white;
+			margin: 20px auto 0 auto;
+			width: 70%;
+			font-size: 45px;
+			line-height: 1em;
 		}
-		#ufopi{
-			font-size: 40px;
-			padding-right: 0%;
-
-		}
-		#pi{
-			font-size: 40px;
-
-		}
-		 #mobileQuery{
+		#mobileQuery{
 			 background-repeat: no-repeat;
 			 background-size: cover;
 			grid-template-columns: 1fr;
@@ -2916,21 +2924,39 @@ textarea {
 			'img6 img6';
 		}
 	}
-	
-	@media(min-width: 522px) and (max-width: 900px){
+
+	@media(min-width: 522px) and (max-width: 699px){
 		#saucy{
-			padding-bottom: 100px;
-			font-size: 60px;
+			margin-left: 30px;
+			position: absolute;
+			top: 10px;
+			left: 60px;
+			height: 200px;
+			width: 75%;
 		}
-		#flyer{
-			font-size: 60px;
-			padding-bottom: 100px
+		.parody-catch{
+			font-family: 'Monsterific';
+			color: white;
+			margin: 45px auto 0 auto;
+			width: 70%;
+			font-size: 55px;
+			line-height: 1em;
 		}
-		#ufopi{
-			font-size: 60px;
+	}
+	
+	@media(min-width: 700px) and (max-width: 900px){
+		#saucy{
+			margin-left: 300px;
+			height: 300px;
+			width: 45%;
 		}
-		#pi{
-			font-size: 60px;
+		.parody-catch{
+			font-family: 'Monsterific';
+			color: white;
+			margin: 65px auto 0 auto;
+			width: 50%;
+			font-size: 55px;
+			line-height: 1em;
 		}
 		.introTxtContainer{
 			grid-template-columns: 1fr;
@@ -2985,18 +3011,18 @@ textarea {
 	}
 
 	@media(min-width: 901px) and (max-width: 1200px){
-		div#saucy{
-			padding-bottom: 100px;
-			font-size: 100px;
+		#saucy{
+			margin-left: 300px;
+			height: 300px;
+			width: 45%;
 		}
-		div#flyer{
-			font-size: 100px;
-		}
-		div#ufopi{
-			font-size: 100px;
-		}
-		div#pi{
-			font-size: 100px;
+		.parody-catch{
+			font-family: 'Monsterific';
+			color: white;
+			margin: 60px auto 0 auto;
+			width: 50%;
+			font-size: 60px;
+			line-height: 1em;
 		}
 		div.about{
 			grid-template-rows: 1fr 1fr;
