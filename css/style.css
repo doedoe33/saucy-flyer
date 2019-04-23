@@ -800,23 +800,33 @@ textarea {
 /* ==========================================================================
    05. Quote
    ========================================================================== */
-.quotes {
-
-}
 .quote {
-	font-size: 12px;
+	font-style: italic;
+	font-size: 16px;
 	line-height: 12px;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	display: none;
-	font-weight: 600;
+	font-weight: 700;
+	/* margin-top: -350px; */
+	/* background-color:  rgba(59, 54, 54, 0.2); */
+	padding: 20px;
+	/* width:150%;
+	margin-left:-300px; */
+	/* margin-top: 30px; */
+	
+}
+.quote > h6 {
+	margin: -10px 0 0 0;
+	padding: 0px;
 }
 .quote span {
+	font-style: normal;
 	display: block;
-	font-size: 10px;
+	font-size: 13px;
 	line-height: 10px;
 	letter-spacing: 2.8px;
-	margin-top: 18px;
+	margin-top: 17px;
 	font-weight: 400;
 }
 
@@ -1683,7 +1693,7 @@ textarea {
 /* ==========================================================================
 12. Trailers
 ========================================================================== */
-.trailer-slider {
+/* .trailer-slider {
 	width: 100%;
 	height: 100%;
 }
@@ -1812,7 +1822,7 @@ textarea {
 		width: 100%;
 		padding: 0 24px;
 	}
-}
+} */
 
 /* ==========================================================================
    13. Blog
@@ -3051,8 +3061,8 @@ textarea {
 	grid-template-areas:
 	'topBlank topBlank'
 	'cast cast'
+	'quotes quotes'
 	'middleBlank middleBlank'
-	'buttons buttons'
 	'awards awards'
 	'bottomInfo bottomInfo'
 }
@@ -3070,21 +3080,17 @@ textarea {
 
 .middleBlank{
 	grid-area: middleBlank;
-	height: 390px
-}
-
-.leadButtons{
-	grid-area: buttons;
-	text-align: center;
+	height:2vh;
 }
 
 .awardsRow{
 	grid-area: awards;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 345px;
 }
 .awardsRow>img{
 	display: inline-block;
+	width: 150px;
 }
 
 .bottomInfo{
@@ -3093,7 +3099,7 @@ textarea {
 	display: grid;
 	grid-template-columns: .5fr 3fr;
 	grid-template-areas:
-	"imdb quotes";
+	"imdb";
   padding-top: 40px;
 }
 
@@ -3115,13 +3121,23 @@ textarea {
 .imdb--btn p{
 	padding-top: 10px;
 }
+.trailer-component{
+	margin: 20px 0px 25px 0px;
+}
+.trailer-component:hover{
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
 
-
-
+}
+.trailer-component>a:hover {
+	color: white;
+	font-size: 22px;
+}
 .quotes{
 	grid-area: quotes;
-	padding-right: 130px
+	text-align: center;
 }
+
 
 @media (max-width: 700px){
 
@@ -3132,8 +3148,8 @@ textarea {
 		grid-template-areas:
 		'topBlank'
 		'cast'
+		'quotes'
 		'middleBlank'
-		'buttons'
 		'awards'
 		'bottomInfo'
 	}
@@ -3147,20 +3163,27 @@ textarea {
 	.castList>div{
 		padding: 10px;
 	}
-	/* middleBlank */
 	div.middleBlank{ 
-		height: 370px
-	}
-	.leadButtons a{
-		display: inline-block;
-		margin-bottom: 60px
+		height: 70px
 	}
 	div#mobileAwards>img{
 		margin: 0 auto;
-		width:100px;
+		width:120px;
+		padding: 0px;
 	}
 	div#mobileAwards{
 		margin-bottom: 30px;
+	}
+	.awardsRow{
+		grid-area: awards;
+		text-align: center;
+		margin-top: 130px;
+		padding: 0px;
+	}
+	.awardsRow>img{
+		margin: 0 auto;
+		width: 150px;
+		padding: 0px;
 	}
 	div.bottomInfo{
 		padding-left: 0px;
@@ -3169,7 +3192,6 @@ textarea {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-areas:
-		"quotes"
 		"imdb"
 		;
 		padding-top: 40px;
@@ -3186,8 +3208,8 @@ textarea {
 		grid-template-areas:
 		'topBlank'
 		'cast'
+		'quotes'
 		'middleBlank'
-		'buttons'
 		'awards'
 		'bottomInfo'
 	}
@@ -3205,16 +3227,16 @@ textarea {
 	.middleBlank{ 
 		height: 500px
 	}
-	.leadButtons{
-		/* padding-bottom: 20px; */
-	}
-	.leadButtons a{
-		margin-bottom: 10px;
+	.awardsRow{
+		grid-area: awards;
+		text-align: center;
+		margin-top: 30px;
+		padding: 0px;
 	}
 	.awardsRow>img{
-
 		margin: 0 auto;
-		width: 120px;
+		width: 150px;
+		padding: 0px;
 	}
 	div.bottomInfo{
 		padding-left: 0px;
@@ -3223,13 +3245,9 @@ textarea {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-areas:
-		"quotes"
 		"imdb"
 		;
 		padding-top: 40px;
-	}
-	.quotes{
-		padding-right: 0px;
 	}
 }
 
@@ -3244,18 +3262,19 @@ textarea {
 	.castList>div{
 		padding: 10px;
 	}
-	/* middleBlank */
 	.middleBlank{ 
 		height: 360px
 	}
-
-	.leadButtons a{
-		margin-bottom: 10px;
+	.awardsRow{
+		grid-area: awards;
+		text-align: center;
+		margin-top: 30px;
+		padding: 0px;
 	}
 	.awardsRow>img{
-
 		margin: 0 auto;
-		width: 130px;
+		width: 150px;
+		padding: 0px;
 	}
 	div.bottomInfo{
 		padding-left: 0px;
@@ -3264,13 +3283,9 @@ textarea {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-areas:
-		"quotes"
 		"imdb"
 		;
 		padding-top: 40px;
-	}
-	.quotes{
-		padding-right: 0px;
 	}
 }
 
