@@ -801,7 +801,7 @@ textarea {
    05. Quote
    ========================================================================== */
 .quote {
-	font-style: italic;
+	/* font-style: italic; */
 	font-size: 16px;
 	line-height: 12px;
 	letter-spacing: 3.6px;
