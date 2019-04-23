@@ -3086,7 +3086,7 @@ textarea {
 .awardsRow{
 	grid-area: awards;
 	text-align: center;
-	padding-top: 345px;
+	padding-top: 435px;
 }
 .awardsRow>img{
 	display: inline-block;
@@ -3136,6 +3136,7 @@ textarea {
 .quotes{
 	grid-area: quotes;
 	text-align: center;
+	margin-top: 72px;
 }
 
 
@@ -3287,6 +3288,187 @@ textarea {
 		;
 		padding-top: 40px;
 	}
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		.castList{
+			padding-left: 0px;
+		}
+		.quotes{
+			margin-top: 160px;
+			margin-bottom: 0px;
+		}
+		div#mobileAwards{
+			margin-top: 0px;
+			padding: 0px;
+		}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .quotes{
+			margin-top: 200px;
+		}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+		.quotes{
+			margin-top: 230px;
+			margin-bottom: 0px;
+		}
+		div#mobileAwards{
+			margin: 0px;
+			padding: 0px;
+		}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+		div#mobileAwards{
+			margin: 0px;
+			padding: 0px;
+		}
+		#middleBlank{
+			display: none;
+			height: 90px
+		}
+		div.mainHomeContainer{
+			grid-template-columns: 1fr;
+			grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+			grid-template-areas:
+			'topBlank'
+			'cast'
+			'quotes'
+			'awards'
+			'bottomInfo'
+		}
+			
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+		.quotes{
+			margin-top: 200px;
+			margin-bottom: 0px;
+		}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+		div#mobileAwards{
+			margin-top: 170px;
+			padding: 0px;
+		}
+		#middleBlank{
+			display: none;
+			height: 90px
+		}
+		div.mainHomeContainer{
+			grid-template-columns: 1fr;
+			grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+			grid-template-areas:
+			'topBlank'
+			'cast'
+			'quotes'
+			'awards'
+			'bottomInfo'
+		}
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+		.quotes{
+			margin-top: 270px;
+			margin-bottom: 0px;
+		}
+		div#mobileAwards{
+			margin: 0px;
+			padding: 0px;
+		}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+		.mainHomeContainer{
+			height: 475px;
+		}
+		div#mobileAwards{
+			margin-top: 200px;
+			padding: 0px;
+		}
+		#middleBlank{
+			display: none;
+			height: 90px
+		}
+		div.mainHomeContainer{
+			grid-template-columns: 1fr;
+			grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+			grid-template-areas:
+			'topBlank'
+			'cast'
+			'quotes'
+			'awards'
+			'bottomInfo'
+		}
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+		.quotes{
+			margin-top:180px;
+			margin-bottom: 0px;
+		}
+		div#mobileAwards{
+			margin: 30px 0 0 0;
+			padding: 0px;
+		}
 }
 
 /* ==========================================================================
