@@ -3,41 +3,14 @@
 
 	// Page Loaded...
 	$(document).ready(function () {
-		setTimeout(function(){
-			var ufoAnimation = document.querySelector('.animationUfo')
-			if(ufoAnimation){
-				ufoAnimation.style.height = "40px";
-				ufoAnimation.style.visibility = "hidden";
-			}
-		}, 2700)
-		
-	
 
 		$(function(){
-			var hasBeenTriggered = false;
 			$(window).scroll(function() {
-				if ($(this).scrollTop() >= 230 && !hasBeenTriggered) { // if scroll is greater/equal then 100 and hasBeenTrigged is set to false.
-				//  alert("You've scrolled ^^^ pixels.");
-					$('.initialIntroTextState').addClass('introText animated fadeIn')
-					hasBeenTriggered = true;
+				if ($(this).scrollTop() >= 210) {
+					$('.initial-article').css('opacity', '1')
 				}
 			});
-
-		
 		});
-
-		// $(function() {
-		// 	$('.introTxtContainer').hover(function(){
-		// 		$('.initialIntroTextState').addClass('introT ext animated fadeIn')
-		// 	})
-		// })
-
-		// $('.introText').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd osanimationend animationend',
-		// function(){
-		// 	$(this).removeClass('animated fadeIn')
-		// })
-
-
 
 		// Nice Scroll
 		$(".scroll").niceScroll({

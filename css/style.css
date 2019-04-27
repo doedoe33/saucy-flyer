@@ -2597,21 +2597,18 @@ textarea {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
 		grid-template-rows: 1fr 1fr;
 		grid-template-areas:
 		'intro-section intro-section'
 		'opening-content opening-content'
 	}
-	
 	.intro-section{
 		grid-area: intro-section;
 		background-image: url('../images/about_page.png');
 		/* background-attachment: fixed; */
-		/* background-repeat: no-repeat; */
+		background-repeat: no-repeat;
 		/* background-size:cover; */
 		height: 83vh;
-		/* text-align: center; */
 	}
 	.text-plaster{
 		height: 600px;
@@ -2625,7 +2622,6 @@ textarea {
 	.opening-content{
 		grid-area: opening-content;
 		border-right: 1px solid rgba(255, 255, 255, 0.2);
-		/* background-image: url('../images/Is Saucy The Muther berthold city.png'); */
 		display: grid;
 		height: 700px;
 		grid-template-columns: 1fr 1fr;
@@ -2633,40 +2629,13 @@ textarea {
 		grid-template-areas:
 		'initial-article movieTrailer'
 	}
-
 	.initial-article{
 		grid-area: initial-article;
 		padding: 40px;
 		text-align: center;
+		opacity: 0;
+		transition: opacity 2000ms ease-out;
 	}
-
-	/* .initialIntroTextState{
-		text-align: center;
-		visibility: hidden;
-	}
-	.introText{
-		grid-area: introText;
-		margin: 0 auto;
-		padding: 40px;
-		visibility: visible;
-		width: 600px;	
-		animation-duration: 6s;
-	}
-	.introText>blockquote{
-		font-size: 16px;
-	}
-	.introTxtTitle{
-		color: #9fa8da;
-		font-family: 'Raleway', sans-serif;
-		font-weight: bold;
-	}
-	.movieTrailer{
-		border-left: 1px solid rgba(255,255,255,.2);
-		grid-area: movieTrailer;
-		padding: 60px;
-		height: 100px;
-		width: 330px;
-	} */
 	.spacer{
 		border-top: 10px solid transparent;
 		padding: 15px;
@@ -2674,24 +2643,6 @@ textarea {
 		-o-border-image: url(border.png) 70 stretch; 
 		border-image: url('../images/borderImage.png') 70 stretch;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -2716,35 +2667,6 @@ and (orientation: portrait) {
 		'initial-article initial-article initial-article'
 		'movieTrailer movieTrailer movieTrailer'
 	}
-	/* main{
-		grid-template-areas:
-		'intro-section intro-section'
-		'opening-content opening-content'
-	}
-	.opening-content{
-		grid-template-areas:
-		'initial-article'
-		'movieTrailer'
-	}
-	.intro-section{
-		height: 100vh;
-	}
-	.text-plaster{
-		animation-duration: 1s;
-		margin-top: 120px;
-		padding: 0;
-		animation-delay: 2s;
-		width: 180%;
-		height: 800px;
-		margin-left:-170px;
-	}
-
-	.initial-article{
-		margin-left: 7%;
-		margin-top: 60px;
-		width:120%;
-		padding: 0px;
-	} */
 }
 
 
@@ -2778,30 +2700,7 @@ and (orientation: portrait) {
 		'initial-article initial-article initial-article'
 		'movieTrailer movieTrailer movieTrailer'
 	}
-	/*
 
-	.intro-section{
-		height: 100vh;
-	}
-	.text-plaster{
-		animation-duration: 1s;
-		margin-top: 120px;
-		padding: 0;
-		animation-delay: 2s;
-		width: 95%;
-		height: 800px;
-		margin-left: 5%;
-	}
-
-	.initial-article{
-		/* margin-left: 12%;
-		padding: 0 0 0 10px;
-		margin-top: 60px;
-		width:80%;
-	}
-	.initial-article > p {
-		width: 90%;
-	} */
 }
 
 /* Landscape */
@@ -2875,54 +2774,6 @@ and (orientation: portrait) {
 		'movieTrailer movieTrailer movieTrailer'
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
