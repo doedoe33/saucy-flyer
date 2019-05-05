@@ -2608,7 +2608,7 @@ textarea {
 		/* background-attachment: fixed; */
 		background-repeat: no-repeat;
 		/* background-size:cover; */
-		height: 83vh;
+		height: 87vh;
 	}
 	.text-plaster{
 		height: 600px;
@@ -2627,21 +2627,16 @@ textarea {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 		grid-template-areas:
-		'initial-article movieTrailer'
+		'initial-article initial-article'
 	}
 	.initial-article{
 		grid-area: initial-article;
 		padding: 40px;
-		text-align: center;
+		text-align: left;
+		line-height: normal;
+		font-size: 30px;
 		opacity: 0;
 		transition: opacity 2000ms ease-out;
-	}
-	.spacer{
-		border-top: 10px solid transparent;
-		padding: 15px;
-		-webkit-border-image: url('../images/borderImage.png') 70 stretch;
-		-o-border-image: url(border.png) 70 stretch; 
-		border-image: url('../images/borderImage.png') 70 stretch;
 	}
 
 
@@ -2816,7 +2811,7 @@ and (orientation: portrait) {
 .awardsRow{
 	grid-area: awards;
 	text-align: center;
-	padding-top: 435px;
+	padding-top: 335px;
 }
 .awardsRow>img{
 	display: inline-block;

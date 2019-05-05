@@ -49,7 +49,7 @@ body{
 }
 .cast-info > h4  {
     color: #9fa8da;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 24px;
     text-transform: uppercase;
     margin: 0;
@@ -73,8 +73,9 @@ body{
     line-height: 24px;
     letter-spacing: 1.4px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 0 auto 25px auto;
+    padding-left: 7px;
 }
 .cast-info > .cast-quotes > .cast-p {
     display: inline-block;
