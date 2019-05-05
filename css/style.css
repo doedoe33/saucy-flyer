@@ -801,19 +801,13 @@ textarea {
    05. Quote
    ========================================================================== */
 .quote {
-	/* font-style: italic; */
 	font-size: 16px;
-	line-height: 12px;
+	line-height: 19px;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	display: none;
 	font-weight: 700;
-	/* margin-top: -350px; */
-	/* background-color:  rgba(59, 54, 54, 0.2); */
 	padding: 20px;
-	/* width:150%;
-	margin-left:-300px; */
-	/* margin-top: 30px; */
 	
 }
 .quote > h6 {
@@ -824,7 +818,7 @@ textarea {
 	font-style: normal;
 	display: block;
 	font-size: 13px;
-	line-height: 10px;
+	line-height: 16px;
 	letter-spacing: 2.8px;
 	margin-top: 17px;
 	font-weight: 400;
@@ -3034,6 +3028,17 @@ and (orientation: portrait) {
 		div#mobileAwards{
 			margin-top: 0px;
 			padding: 0px;
+		}
+		.mainHomeContainer{
+			grid-template-areas:
+			'topBlank topBlank'
+			'quotes quotes'
+			'middleBlank middleBlank'
+			'awards awards'
+			'bottomInfo bottomInfo'
+		}
+		.castList{
+			visibility: hidden;
 		}
 }
 
