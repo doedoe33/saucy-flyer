@@ -2591,10 +2591,11 @@ textarea {
 		width: 100%;
 	}
 	.intro-section{
-		background-image: url('../images/About page spotlight.png');
+		background-image: url('../images/saucy-desktop.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
+		background-position: center;
 	}
 
 	.story-section {
@@ -2614,15 +2615,15 @@ textarea {
 		color: black;
 		font-weight: 600;
 		font-size: 42px;
-		margin-top: 10px;
+		margin-top: -20px;
 	}
 	.spaceship-decoration img{
-		margin-top: -20px;
+		margin-top: -30px;
 		height: 120px;
 	}
 
 	.scrollable-paragraph{
-		margin-top: 110px;
+		margin-top: 80px;
 		height: 22%;
 		border-radius: 7px;
 		padding: 20px;
@@ -2658,7 +2659,17 @@ textarea {
   background: #bebaba; 
 }
 
-
+@media(min-width: 1300px) and (max-width: 1536px) {
+	.story-decorations p{
+		margin-top: -30px;
+	}
+	.spaceship-decoration img{
+		margin-top: -30px;
+	}
+	.scrollable-paragraph{
+		margin-top: 60px;
+	}
+}
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait */
@@ -2668,7 +2679,7 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 	.intro-section{
-		background-image: url('../images/bg_mobile.png');
+		background-image: url('../images/saucy_mobile.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size: cover;
@@ -2719,7 +2730,7 @@ and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) { 
 	.intro-section{
-		background-image: url('../images/bg_mobile.png');
+		background-image: url('../images/saucy_mobile.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2746,7 +2757,7 @@ and (max-device-width: 736px)
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) { 
 	.intro-section{
-		background-image: url('../images/bg_mobile.png');
+		background-image: url('../images/saucy_mobile.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2786,7 +2797,7 @@ and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) {
 	.intro-section{
-		background-image: url('../images/bg_mobile.png');
+		background-image: url('../images/saucy_mobile.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2818,7 +2829,7 @@ and (device-height: 640px)
 and (-webkit-device-pixel-ratio: 3) 
 and (orientation: portrait) {
 	.intro-section{
-		background-image: url('../images/bg_mobile.png');
+		background-image: url('../images/saucy_mobile.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2834,7 +2845,7 @@ and (orientation: portrait) {
    22. New Home Additions
 	 ========================================================================== */
 .mainHomeContainer{
-	background-image: url('../images/index-bg.jpg');
+	background-image: url('../images/bg-desktop.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -2927,7 +2938,7 @@ and (orientation: portrait) {
 @media (max-width: 700px){
 
 	div.mainHomeContainer{
-		background-image: url('../images/index-bg-mobile.jpg');
+		background-image: url('../images/bg-mobile.png');
 		grid-template-columns: 1fr;
 		grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
 		grid-template-areas:
@@ -2987,7 +2998,8 @@ and (orientation: portrait) {
 }
 @media (max-width: 832px){
 	div.mainHomeContainer{
-		background-image: url('../images/index-bg-tablet.jpg');
+		background-image: url('../images/bg-mobile.png');
+		background-position: center -70px;
 		grid-template-columns: 1fr;
 		grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
 		grid-template-areas:
