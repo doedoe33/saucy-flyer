@@ -2591,7 +2591,7 @@ textarea {
 		width: 100%;
 	}
 	.intro-section{
-		background-image: url('../images/saucy-desktop.png');
+		background-image: url('../images/About page spotlight_white and red.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2634,7 +2634,7 @@ textarea {
     font-weight: 600;
 		width: 40%;
 		overflow-y: scroll;
-		background-color: rgba(105, 102, 102, 0.3)
+		background-color: rgba(105, 102, 102, 0.01)
 	}
 
 	/* width */
@@ -2712,7 +2712,7 @@ and (orientation: portrait) {
 		font-weight: 700;
 		width: 95%;
 		/* overflow: scroll; */
-		background-color: rgba(105, 102, 102, 0.5)
+		background-color: rgba(105, 102, 102, 0.0)
 	}
 }
 
@@ -2776,7 +2776,7 @@ and (orientation: portrait) {
 		font-size: 15px;
 		font-weight: 700;
 		width: 93%;
-		background-color: rgba(105, 102, 102, 0.5)
+		background-color: rgba(105, 102, 102, 0.0)
 	}
 }
 
