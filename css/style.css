@@ -2610,12 +2610,7 @@ textarea {
 		text-align: center;
 		height: 22%;
 		padding-top: 15%;
-	}
-	.story-decorations p{
-		color: black;
-		font-weight: 600;
-		font-size: 42px;
-		margin-top: -20px;
+		margin-left: -250px;
 	}
 	.spaceship-decoration img{
 		margin-top: -30px;
@@ -2624,7 +2619,8 @@ textarea {
 
 	.scrollable-paragraph{
 		margin-top: 80px;
-		height: 22%;
+		margin-left: -250px;
+		height: 27%;
 		border-radius: 7px;
 		padding: 20px;
 		color: black;
@@ -2632,14 +2628,15 @@ textarea {
 		font-weight: 700;
 		line-height: 30px;
     font-weight: 600;
-		width: 40%;
+		width: 36%;
 		overflow-y: scroll;
 		background-color: rgba(105, 102, 102, 0.01)
 	}
 
 	/* width */
 ::-webkit-scrollbar {
-  width: 5px;
+	width: 5px;
+
 }
 
 /* Track */
