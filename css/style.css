@@ -2648,7 +2648,8 @@ textarea {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: white; 
-  border-radius: 10px;
+	border-radius: 10px;	
+	height: 100px;
 }
 
 /* Handle on hover */
@@ -2762,6 +2763,9 @@ and (orientation: portrait) {
 		padding-top: 35%;
 		height: 50%;
 	}
+	.spaceship-decoration img{
+		margin-top: 190px;
+	}
 	.scrollable-paragraph{
 		border-radius: 7px;
 		height: 35%;
@@ -2797,9 +2801,8 @@ and (orientation: portrait) {
 		height: 100%;
 		background-size:cover;
 	}
-	.story-decorations p{
-		padding: 0px;
-		margin: 130px 0 0 0;
+	.spaceship-decoration img{
+		margin-top: 190px;
 	}
 	.scrollable-paragraph{
 		height: 30%;
