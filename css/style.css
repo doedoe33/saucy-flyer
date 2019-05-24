@@ -1467,7 +1467,7 @@ textarea {
 	transform: rotate(-45deg);
 }
 .bottom-info .share, .bottom-info .follow {
-	text-align: right;
+	text-align: center;
 	margin-top: 16px;
 	display: none;
 	font-size: 18px;
