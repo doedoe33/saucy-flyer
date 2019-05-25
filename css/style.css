@@ -2597,7 +2597,7 @@ textarea {
 		width: 100%;
 	}
 	.intro-section{
-		background-image: url('../images/About page spotlight.png');
+		background-image: url('../images/Single Shadow on Titles.png');
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size:cover;
@@ -2616,7 +2616,7 @@ textarea {
 		text-align: center;
 		height: 22%;
 		padding-top: 15%;
-		margin-left: -250px;
+		margin-left: -200px;
 	}
 	.spaceship-decoration img{
 		margin-top: -30px;
@@ -2625,8 +2625,8 @@ textarea {
 	}
 
 	.scrollable-paragraph{
-		margin-top: 80px;
-		margin-left: -250px;
+		margin-top: -20px;
+		margin-left: -130px;
 		height: 27%;
 		border-radius: 7px;
 		padding: 20px;
