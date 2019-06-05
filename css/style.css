@@ -2640,15 +2640,15 @@ textarea {
 		background-color: rgba(105, 102, 102, 0.01)
 	}
 
-@media(min-width: 1300px) and (max-width: 1536px) {
+@media(min-width: 1300px) and (max-width: 1950px) {
+	.scrollable-paragraph{
+		margin-top: 30px;
+	}
 	.story-decorations p{
 		margin-top: -30px;
 	}
 	.spaceship-decoration img{
 		margin-top: -30px;
-	}
-	.scrollable-paragraph{
-		margin-top: 60px;
 	}
 }
 
