@@ -116,6 +116,9 @@ body{
     .overlay{
         opacity: 0;    
     }
+    .cast-img{
+        height: 100%;
+    }
 }
 
 /* Portrait */
@@ -158,6 +161,9 @@ body{
     }
     .overlay{
         opacity: 0;    
+    }
+    .cast-img{
+        height: 100%;
     }
 }
 
@@ -202,6 +208,9 @@ body{
     }
     .overlay{
         opacity: 0;    
+    }
+    .cast-img{
+        height: 100%;
     }
 
 }
@@ -249,6 +258,9 @@ body{
     .overlay{
         opacity: 0;    
     }
+    .cast-img{
+        height: 100%;
+    }
 
 }
 
@@ -294,6 +306,9 @@ body{
     }
     .overlay{
         opacity: 0;    
+    }
+    .cast-img{
+        height: 100%;
     }
 
 }
@@ -342,6 +357,9 @@ body{
     .overlay{
         opacity: 0;    
     }
+    .cast-img{
+        height: 100%;
+    }
 
 }
 
@@ -388,6 +406,9 @@ body{
     .overlay{
         opacity: 0;    
     }
+    .cast-img{
+        height: 100%;
+    }
 
 }
 
@@ -432,6 +453,9 @@ body{
     }
     .overlay{
         opacity: 0;    
+    }
+    .cast-img{
+        height: 100%;
     }
 
 }
