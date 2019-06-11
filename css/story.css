@@ -20,3 +20,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #bebaba; 
 }
+
+#text-span{
+    text-align: left !important;
+    font-size: 30px;
+    font-variant: all-petite-caps;
+}
