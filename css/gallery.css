@@ -25,14 +25,12 @@
     margin: 0 auto;
 }
 .square-img{
-    height: 750px; 
-    width: 750px !important;
+    height: 570px; 
+    width: 600px !important;
 }
 .horizontal-img{
-    /* height: 600px; 
-    width: 850px !important; */
-    height: 500px;
-    width: 750px !important;
+    height: 450px;
+    width: 650px !important;
 }
 
 /* Custom Dots */
@@ -71,12 +69,11 @@
     top: 10%;
 }
 .owl-prev{
-    /* margin-left: 12%; use this for bigger resolutions*/
-    margin-left: 2%;
+    margin-left: 10%;
 }
 .owl-next{
-    /* margin-left: 85%; use this for bigger resolutions*/
-    margin-left: 93%;
+    margin-left: 85%;
+}
 
 
 /* ---------- larger desktops ----------- */
