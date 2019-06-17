@@ -2674,7 +2674,7 @@ and (orientation: portrait) {
 		font-weight: 700;
 		width: 95%;
 		/* overflow: scroll; */
-		background-color: rgba(105, 102, 102, 0.0)
+		background-color: rgba(105, 102, 102, 0.4)
 	}
 }
 
@@ -2733,7 +2733,6 @@ and (orientation: portrait) {
 		font-size: 15px;
 		font-weight: 700;
 		width: 93%;
-		background-color: rgba(105, 102, 102, 0.0)
 	}
 }
 
