@@ -149,7 +149,49 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .gallery-wrap{
+        height: 100%;
+        padding-top: 70px; 
+    }
+    .owl-carousel{
+        margin: 0px auto 0 auto;
+        width: 95%;
+        padding: 10px;
+    }
 
+    .owl-carousel > .item > img{
+        height: 100%;
+        border: 1px solid orange;
+    }
+
+    .horizontal-wrap{
+        padding-top: 15%;
+    }
+    .square-img{
+        height: 100%; 
+        width: 100% !important;
+    }
+    .horizontal-img{
+        height: 100%; 
+        width: 100% !important;
+    }
+
+    .owl-dots{
+        padding-top: 65px; 
+        text-align: center;
+        background-color: rgba(99, 95, 95, 0.2)
+    }
+    .owl-nav > div{
+        position: absolute;
+        top: 72%;
+        background-color: rgba(99, 95, 95, 0.4)
+    }
+    .owl-prev{
+        margin-left: 0%;
+    }
+    .owl-next{
+        margin-left: 85%;
+    }
 }
 
 /* Landscape */
