@@ -219,7 +219,22 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-
+    .owl-dots{
+        padding-top: 80px; 
+        text-align: center;
+        background-color: rgba(99, 95, 95, 0.2)
+    }
+    .owl-nav > div{
+        position: absolute;
+        top: 72%;
+        background-color: rgba(99, 95, 95, 0.4)
+    }
+    .owl-prev{
+        margin-left: 0%;
+    }
+    .owl-next{
+        margin-left: 87%;
+    }
 }
 
 /* Landscape */
