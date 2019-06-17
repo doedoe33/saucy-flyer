@@ -268,6 +268,9 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
+    /* .gallery-wrap{
+        padding-top: 0px; 
+    } */
     .square-img{
         height: 470px; 
     }
@@ -311,9 +314,9 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-    .gallery-wrap{
+    /* .gallery-wrap{
         padding-top: 150px; 
-    }
+    } */
 }
 
 /* Landscape */
