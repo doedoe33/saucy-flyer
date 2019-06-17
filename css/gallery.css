@@ -261,8 +261,23 @@
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
+  and (orientation: portrait) {
+    .square-img{
+        height: 470px; 
+    }
+    .horizontal-wrap{
+        padding-top: 130px;
+    }
 
+    .owl-dots{
+        padding-top: 67px;
+    }
+    .owl-nav > div{
+        top: 83%;
+    }
+    .owl-next{
+        margin-left: 88%;
+    }
 }
 
 /* Landscape */
