@@ -11,7 +11,7 @@ $(window).on('load', function(){
       "<i class='fas fa-chevron-left fa-3x'></i>",
       "<i class='fas fa-chevron-right fa-3x'></i>"
     ],
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: true,
     dots: true,
     dotsData: true,
