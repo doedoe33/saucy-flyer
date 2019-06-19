@@ -1,6 +1,420 @@
 body{
     background-color: black;
 }
-.imdb--btn p {
-    margin-bottom: 20px;
+
+.mainHomeContainer{
+    background-image: url('../images/bg-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr 3fr .5fr 1fr 1fr;
+    grid-template-areas:
+    'topBlank topBlank'
+    'cast cast'
+    'quotes quotes'
+    'middleBlank middleBlank'
+    'awards awards'
+    'bottomInfo bottomInfo'
+}
+
+.topBlank{
+    grid-area: topBlank;
+    height: 20px;
+}
+
+.castList{
+    grid-area: cast;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.middleBlank{
+    grid-area: middleBlank;
+    height:2vh;
+}
+
+.awardsRow{
+    grid-area: awards;
+    text-align: center;
+    padding-top: 335px;
+}
+.awardsRow>img{
+    display: inline-block;
+    width: 150px;
+}
+
+.bottomInfo{
+    grid-area: bottomInfo;
+    text-align: center;
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    grid-template-areas:
+    "imdb";
+    padding-top: 40px;
+}
+
+
+.quotes{
+    grid-area: quotes;
+    text-align: center;
+    margin-top: 72px;
+}
+
+
+@media (max-width: 700px){
+
+    div.mainHomeContainer{
+        background-image: url('../images/bg-mobile.png');
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+        grid-template-areas:
+        'topBlank'
+        'cast'
+        'quotes'
+        'middleBlank'
+        'awards'
+        'bottomInfo'
+    }
+    .topBlank{
+        height: 50px;
+    }
+    .castList{
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    .castList>div{
+        padding: 10px;
+    }
+    div.middleBlank{ 
+        height: 70px
+    }
+    div#mobileAwards>img{
+        margin: 0 auto;
+        width:120px;
+        padding: 0px;
+    }
+    div#mobileAwards{
+        margin-bottom: 30px;
+    }
+    .awardsRow{
+        grid-area: awards;
+        text-align: center;
+        margin-top: 130px;
+        padding: 0px;
+    }
+    .awardsRow>img{
+        margin: 0 auto;
+        width: 150px;
+        padding: 0px;
+    }
+    div.bottomInfo{
+        padding-left: 0px;
+        grid-area: bottomInfo;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imdb"
+        ;
+        padding-top: 40px;
+    }
+    .quotes{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 832px){
+    div.mainHomeContainer{
+        background-image: url('../images/bg-mobile.png');
+        background-position: center -70px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+        grid-template-areas:
+        'topBlank'
+        'cast'
+        'quotes'
+        'middleBlank'
+        'awards'
+        'bottomInfo'
+    }
+    .topBlank{
+        height: 50px;
+    }
+    .castList{
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    .castList>div{
+        padding: 10px;
+    }
+    /* middleBlank */
+    .middleBlank{ 
+        height: 500px
+    }
+    .awardsRow{
+        grid-area: awards;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0px;
+    }
+    .awardsRow>img{
+        margin: 0 auto;
+        width: 150px;
+        padding: 0px;
+    }
+    div.bottomInfo{
+        padding-left: 0px;
+        grid-area: bottomInfo;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imdb"
+        ;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 1440px){
+    .topBlank{
+        height: 50px;
+    }
+    .castList{
+        /* padding-top: 20px;
+        padding-left: 130px; */
+    }
+    .castList>div{
+        padding: 10px;
+    }
+    .middleBlank{ 
+        height: 360px
+    }
+    .awardsRow{
+        grid-area: awards;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0px;
+    }
+    .awardsRow>img{
+        margin: 0 auto;
+        width: 150px;
+        padding: 0px;
+    }
+    div.bottomInfo{
+        padding-left: 0px;
+        grid-area: bottomInfo;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imdb"
+        ;
+        padding-top: 40px;
+    }
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        .castList{
+            padding-left: 0px;
+        }
+        .quotes{
+            margin-top: 160px;
+            margin-bottom: 0px;
+        }
+        div#mobileAwards{
+            margin-top: 0px;
+            padding: 0px;
+        }
+        .mainHomeContainer{
+            grid-template-areas:
+            'topBlank topBlank'
+            'quotes quotes'
+            'middleBlank middleBlank'
+            'awards awards'
+            'bottomInfo bottomInfo'
+        }
+        .castList{
+            visibility: hidden;
+        }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+    .quotes{
+            margin-top: 200px;
+        }
+}
+
+/* Portrait */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) { 
+        .quotes{
+            margin-top: 230px;
+            margin-bottom: 0px;
+        }
+        div#mobileAwards{
+            margin: 0px;
+            padding: 0px;
+        }
+}
+
+/* Landscape */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { 
+        div#mobileAwards{
+            margin: 0px;
+            padding: 0px;
+        }
+        #middleBlank{
+            display: none;
+            height: 90px
+        }
+        div.mainHomeContainer{
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+            grid-template-areas:
+            'topBlank'
+            'cast'
+            'quotes'
+            'awards'
+            'bottomInfo'
+        }
+            
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) { 
+        .quotes{
+            margin-top: 200px;
+            margin-bottom: 0px;
+        }
+}
+
+/* Landscape */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+        div#mobileAwards{
+            margin-top: 170px;
+            padding: 0px;
+        }
+        #middleBlank{
+            display: none;
+            height: 90px
+        }
+        div.mainHomeContainer{
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+            grid-template-areas:
+            'topBlank'
+            'cast'
+            'quotes'
+            'awards'
+            'bottomInfo'
+        }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+        .quotes{
+            margin-top: 270px;
+            margin-bottom: 0px;
+        }
+        div#mobileAwards{
+            margin: 0px;
+            padding: 0px;
+        }
+}
+
+/* Landscape */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) { 
+        .mainHomeContainer{
+            height: 475px;
+        }
+        div#mobileAwards{
+            margin-top: 200px;
+            padding: 0px;
+        }
+        #middleBlank{
+            display: none;
+            height: 90px
+        }
+        div.mainHomeContainer{
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
+            grid-template-areas:
+            'topBlank'
+            'cast'
+            'quotes'
+            'awards'
+            'bottomInfo'
+        }
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait */
+@media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+        .quotes{
+            margin-top:180px;
+            margin-bottom: 0px;
+        }
+        div#mobileAwards{
+            margin: 30px 0 0 0;
+            padding: 0px;
+        }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
+    .castList{
+        padding: 0px;
+        margin-top: -25px;
+    }
+    .quotes{
+        margin-top: 0px;
+    }
 }
