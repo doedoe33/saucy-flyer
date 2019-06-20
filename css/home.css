@@ -415,6 +415,6 @@ and (max-device-width : 1023px)  {
         margin-top: -25px;
     }
     .quotes{
-        margin-top: 0px;
+        margin-top: -20px;
     }
 }
