@@ -418,3 +418,15 @@ and (max-device-width : 1023px)  {
         margin-top: -20px;
     }
 }
+
+@media only screen 
+and (min-device-height : 635px) 
+and (max-device-width : 1366px)  {
+    .castList{
+        padding: 0px;
+        margin-top: -25px;
+    }
+    #quotes{
+        margin-top: 45px !important;
+    }
+}
