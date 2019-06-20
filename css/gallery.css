@@ -220,7 +220,7 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .square-img{
-        height: 440px; 
+        height: 100%; 
     }
     .horizontal-wrap{
         padding-top: 130px;
@@ -269,14 +269,14 @@
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
     .square-img{
-        height: 470px; 
+        height: 100%; 
     }
     .horizontal-wrap{
         padding-top: 130px;
     }
 
     .owl-dots{
-        padding-top: 67px;
+        padding-top: 47px;
     }
     .owl-nav > div{
         top: 83%;
