@@ -216,6 +216,45 @@ body{
     }
 }
 
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
+    .castList{
+        padding: 0px;
+        margin-top: -25px;
+    }
+    .quotes{
+        margin-top: -20px;
+    }
+} */
+
+/* Tablet/Notebook */
+@media only screen 
+and (min-device-height: 635px)
+and (min-device-width: 1000px) 
+and (max-device-width: 1366px)  {
+    .mainHomeContainer{
+        background-image: url('../images/bg-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+    .middleBlank{
+        height: 180px;
+    }
+    .castList{
+        padding: 0px;
+        margin-top: -25px;
+    }
+    #quotes{
+        margin-top: 25px;
+    }
+    #mobileAwards{
+        margin-top: 70px;
+    }
+}
+
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
 /* Portrait */
@@ -236,19 +275,6 @@ body{
             height: 226px;
         }
 }
-
-/* @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1023px)  {
-    .castList{
-        padding: 0px;
-        margin-top: -25px;
-    }
-    .quotes{
-        margin-top: -20px;
-    }
-} */
-
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -464,31 +490,3 @@ and (max-device-width : 1023px)  {
         }
 }
 
-
-/* Tablet/Notebook */
-/* @media only screen 
-and (min-device-height: 635px)
-and (min-device-width: 1000px) 
-and (max-device-width: 1366px)  {
-    .mainHomeContainer{
-        background-image: url('../images/bg-desktop.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-
-    }
-    .middleBlank{
-        height: 180px;
-    }
-    .castList{
-        padding: 0px;
-        margin-top: -25px;
-    }
-    #quotes{
-        margin-top: 45px !important;
-    }
-    #mobileAwards{
-        margin-top: 70px !important;
-        margin-left: -200px !important;
-    }
-} */
