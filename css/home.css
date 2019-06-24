@@ -177,6 +177,7 @@ body{
     }
 }
 
+/*  Large Monitors */
 @media (max-width: 1440px){
     .topBlank{
         height: 50px;
@@ -214,6 +215,39 @@ body{
         padding-top: 40px;
     }
 }
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait */
+@media screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+        .quotes{
+            margin-top:180px;
+            margin-bottom: 0px;
+        }
+        div#mobileAwards{
+            margin: 30px 0 0 0;
+            padding: 0px;
+        }
+        .castList{
+            height: 226px;
+        }
+}
+
+/* @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  {
+    .castList{
+        padding: 0px;
+        margin-top: -25px;
+    }
+    .quotes{
+        margin-top: -20px;
+    }
+} */
 
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -256,8 +290,12 @@ body{
     and (max-device-width: 667px) 
     and (-webkit-min-device-pixel-ratio: 2) { 
     .quotes{
-            margin-top: 200px;
-        }
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .castList{
+        height: 256px;
+    }
 }
 
 /* Portrait */
@@ -267,12 +305,15 @@ body{
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) { 
         .quotes{
-            margin-top: 230px;
+            margin-top: 0px;
             margin-bottom: 0px;
         }
         div#mobileAwards{
             margin: 0px;
             padding: 0px;
+        }
+        .castList{
+            height: 386px;
         }
 }
 
@@ -303,6 +344,33 @@ body{
             
 }
 
+/* ----------- Pixel 2 -----------  */
+
+/* Portrait */
+@media only screen
+    and (min-device-width: 411px)
+    and (max-device-width: 731px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait){
+        .castList{
+            height: 446px;
+        }
+}
+
+/* ----------- Pixel 2 ----------- */
+
+/* Portrait */
+@media only screen
+    and (min-device-width: 411px)
+    and (min-device-height: 732px)
+    and (max-device-width: 823px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait){
+        .castList{
+            height: 536px;
+        }
+}
+
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait */
@@ -314,6 +382,9 @@ body{
         .quotes{
             margin-top: 200px;
             margin-bottom: 0px;
+        }
+        .castList{
+            height: 246px;
         }
 }
 
@@ -346,8 +417,9 @@ body{
 /* ----------- iPhone X ----------- */
 /* Portrait */
 @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 812px) 
+    and (min-device-width: 375px)
+    and (min-device-height: 737px)
+    and (max-device-height: 812px) 
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
         .quotes{
@@ -357,6 +429,9 @@ body{
         div#mobileAwards{
             margin: 0px;
             padding: 0px;
+        }
+        .castList{
+            height: 246px;
         }
 }
 
@@ -389,39 +464,12 @@ body{
         }
 }
 
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
-/* Portrait */
-@media screen 
-    and (device-width: 360px) 
-    and (device-height: 640px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: portrait) {
-        .quotes{
-            margin-top:180px;
-            margin-bottom: 0px;
-        }
-        div#mobileAwards{
-            margin: 30px 0 0 0;
-            padding: 0px;
-        }
-}
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1023px)  {
-    .castList{
-        padding: 0px;
-        margin-top: -25px;
-    }
-    .quotes{
-        margin-top: -20px;
-    }
-}
-
-@media only screen 
-and (min-device-height : 635px) 
-and (max-device-width : 1366px)  {
+/* Tablet/Notebook */
+/* @media only screen 
+and (min-device-height: 635px)
+and (min-device-width: 1000px) 
+and (max-device-width: 1366px)  {
     .mainHomeContainer{
         background-image: url('../images/bg-desktop.png');
         background-size: cover;
@@ -443,5 +491,4 @@ and (max-device-width : 1366px)  {
         margin-top: 70px !important;
         margin-left: -200px !important;
     }
-
-}
+} */
