@@ -3,27 +3,13 @@
 * Contents
 *
 * 01. General Styles
-* 02. Page
-* 03. Cast List (Home Page)
-* 04. Awards
-* 05. Quote
-* 06. Pace
-* 07. Menu
-* 08. Bottom Info
-* 09. Credits
-* 10. Blog Post Slider
-* 11. Cast Slider
-* 12. Trailers
-* 13. Blog
-* 14. Gallery
-* 15. Video
-* 16. Featured Slider
-* 17. Testimonial Slider
-* 18. Release Date
-* 19. Countdown
-* 20. Contact
-* 21. Comments
-* 22. General Nav Menu styles
+* 02. Pace
+* 03. Menu
+* 04. Bottom Info
+* 05. Credits
+* 06. General Nav Menu styles
+
+
 **/
 
 
@@ -261,6 +247,66 @@ button {
 	}
 }
 
+/* ==========================================================================
+   02. Pace
+   ========================================================================== */
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.pace-inactive {
+	display: none;
+}
+.pace .pace-progress {
+	background: #9fa8da;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 3px;
+}
+.pace .pace-activity {
+	display: block;
+	position: fixed;
+	z-index: 2000;
+	top: 24px;
+	right: 24px;
+	width: 24px;
+	height: 24px;
+	border: solid 2px transparent;
+	border-top-color: #9fa8da;
+	border-left-color: #9fa8da;
+	border-radius: 10px;
+	-webkit-animation: pace-spinner 400ms linear infinite;
+	-moz-animation: pace-spinner 400ms linear infinite;
+	-ms-animation: pace-spinner 400ms linear infinite;
+	-o-animation: pace-spinner 400ms linear infinite;
+	animation: pace-spinner 400ms linear infinite;
+}
+@-webkit-keyframes pace-spinner {
+	0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+	0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+	0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+	0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+	0% { transform: rotate(0deg); transform: rotate(0deg); }
+	100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
 
 /* main overlay */
 #loadingContainer {
@@ -276,8 +322,8 @@ button {
 }
 
 /* ==========================================================================
-   07. Menu
-	 ========================================================================== */
+   03. Menu
+	========================================================================== */
 .menu-overlay {
 	position: fixed;
 	top: 0;
@@ -587,7 +633,7 @@ button {
 }
 
 /* ==========================================================================
-   08. Bottom Info
+   04. Bottom Info
    ========================================================================== */
 .bottom-info {
 	font-size: 12px;
@@ -674,7 +720,7 @@ button {
 }
 
 /* ==========================================================================
-   09. Credits
+   05. Credits
    ========================================================================== */
 .credits {
 	position: fixed;
@@ -763,7 +809,7 @@ button {
 
 
 /* ==========================================================================
-  21. General Nav Menu styles
+  06. General Nav Menu styles
    ========================================================================== */
 .imdb--btn{
     grid-area: imdb
