@@ -1,0 +1,37 @@
+body{
+    background: rgb(0, 0, 0);
+    background-image: url('../images/back_most_background.jpg');
+    color: white;
+}
+h1{
+    margin-top: 20%;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    font-size: 2em;
+    margin-left: 45%;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: purple;
+}
+
+/* ----------- general mobile styles ----------- */
+
+/* Portrait */
+@media screen 
+    and (device-width: 360px) 
+    and (max-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+        h1{
+            margin-top: 50%;
+            text-align: center;
+        }
+        p{
+            margin-left: 25%;
+        }
+}
