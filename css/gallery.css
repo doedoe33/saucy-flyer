@@ -311,7 +311,18 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-      
+    .horizontal-wrap{
+      margin: 0px;
+    }
+    .owl-prev{
+      margin: -40px 0 20px 0;
+    }
+    .owl-next{
+      margin-top: -40px;
+    }
+    .owl-dots{
+      margin: -2px 0 30px 0; 
+    }
 }
 
 /* Landscape */
