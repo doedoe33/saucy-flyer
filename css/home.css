@@ -157,7 +157,7 @@ body{
 @media (max-width: 700px){
 
     div.mainHomeContainer{
-        background-image: url('../images/bg-mobile.webp');
+        background-image: url('../images/bg-mobile.png');
         grid-template-columns: 1fr;
         grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
         grid-template-areas:
@@ -217,7 +217,7 @@ body{
 }
 @media (max-width: 832px){
     div.mainHomeContainer{
-        background-image: url('../images/bg-mobile.webp');
+        background-image: url('../images/bg-mobile.png');
         background-position: center -70px;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr .5fr 5fr .5fr 1fr 1fr;
