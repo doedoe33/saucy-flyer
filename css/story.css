@@ -59,7 +59,7 @@ main{
 }
 
 .scrollable-paragraph{
-    margin-top: -100px;
+    margin-top: 50px;
     margin-left: 420px;
     height: 28%;
     border-radius: 7px;
@@ -80,15 +80,6 @@ main{
 @media(min-width: 1300px) and (max-width: 1950px) {
     .scrollable-paragraph{
         margin-top: 30px;
-    }
-}
-
-@media only screen 
-and (min-device-height: 635px)
-and (min-device-width:680px) 
-and (max-device-width: 1299px)  {
-    .scrollable-paragraph{
-        margin-top: 50px;
     }
 }
 
