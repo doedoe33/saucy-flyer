@@ -38,4 +38,61 @@ $(window).on('load', function(){
   //     e.preventDefault();
   // });
 
+  // var owl_stage = document.getElementsByClassName("owl-stage")[0];
+  // owl_stage[0];
+
+  // var activeItemHook = document.getElementsByClassName("owl-item active");
+  // console.log(activeItemHook)
+
+  // var nextBtnHook = document.getElementsByClassName("owl-next")[0];
+  // var prevBtnHook = document.getElementsByClassName("owl-prev")[0];
+
+  // listNoHook = 0;
+
+  // nextBtnHook.addEventListener("click", function(event){
+  //   listNoHook++;
+  //   console.log(listNoHook, event)
+  //   checkActive(1)
+  //   event.stopPropagation();
+  // });
+
+  // function checkActive(elem){
+  //   if(elem){
+  //     return true
+  //   }else{
+  //     return false;
+  //   }
+  // }
+
+  var activeItem =document.querySelector(".owl-item.active .item .item-img-wrap");
+  console.dir(activeItem.firstElementChild.className)
+
+  // var activeItemHook =document.querySelector(".owl-item.active");
+  // console.log(activeItemHook)
+
+
+
+
+
+
+
+
+
+  function checkElem(elem){
+    console.log("111", elem.item(0))
+  }
+  // Listen to owl events:
+  owl.on('changed.owl.carousel', function(event) {
+    activeItem = "";
+  //   activeItemHook =document.querySelector(".owl-item.active .item .item-img-wrap");
+  // console.dir(activeItemHook.firstElementChild.className)
+
+  activeItem =document.getElementsByClassName("owl-item active");
+
+  // checkElem(activeItem)
+  // var activeItemHook = activeItem[0];
+  // console.log(activeItem[0].children, activeItemHook)
+    // console.dir(event.target.firstElementChild.firstElementChild.firstChild.firstChild.firstElementChild.firstElementChild)
+    activeItemHook = "";
+  })
 });

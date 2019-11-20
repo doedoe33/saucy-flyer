@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: left;
     padding-top: 30px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .owl-carousel{
@@ -40,8 +41,8 @@
 }
 .owl-dots .owl-dot {
     margin: 0px 5px;
-    height: 13px;
-    width: 13px;
+    height: 8px;
+    width: 8px;
     background-color: #7c7c7c;
     border-radius: 50%;
     display: inline-block;
@@ -71,8 +72,14 @@
 .owl-prev{
     margin-left: 10%;
 }
+.owl-prev > .svg-inline--fa {
+  width: .425em;
+}
 .owl-next{
     margin-left: 85%;
+}
+.owl-next > .svg-inline--fa {
+  width: .425em;
 }
 
 
