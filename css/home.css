@@ -580,3 +580,54 @@ and (max-device-width: 1366px)  {
         }
 }
 
+/* Ipad Landscape */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape) { 
+        #amy{
+            color: black;
+            font-weight: normal;
+            margin-left: 60px;
+            font-weight: 600;
+        }
+        .mainHomeContainer{
+            background-size: 1250px 850px;
+        }
+        
+}
+
+/* Ipad Portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+
+
+
+
+/* Ipad Pro Landscape */
+@media only screen 
+  and (min-width: 1025px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #amy{
+        color: black;
+        font-weight: 700;
+        font-size: 1em;
+        margin-left: -2px;
+    }
+    .mainHomeContainer{
+        background-size: 1650px 1224px;
+    }
+}
+
+/* Ipad Pro Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+}
